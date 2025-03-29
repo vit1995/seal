@@ -9462,16 +9462,10 @@
                 observer: true,
                 observeParents: true,
                 slidesPerView: 1,
-                spaceBetween: 0,
+                spaceBetween: 10,
                 autoHeight: true,
                 speed: 800,
                 parallax: true,
-                centeredSlides: true,
-                effect: "fade",
-                autoplay: {
-                    delay: 3e3,
-                    disableOnInteraction: false
-                },
                 pagination: {
                     el: ".hero-pagination",
                     clickable: true

@@ -1460,10 +1460,9 @@ body::after {
 }
 
 .hero__slide--one .hero__image {
+  margin-top: 6.25rem;
   position: relative;
-  -webkit-transform: translate(0, 13%);
-      -ms-transform: translate(0, 13%);
-          transform: translate(0, 13%);
+  bottom: -60px;
 }
 
 .hero__slide--one .hero__image img {
@@ -5946,7 +5945,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .examples__title {
-    font-size: 0.75rem;
+    font-size: 1.875rem;
   }
 
   .examples__body {
@@ -6468,6 +6467,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .hero__slide--one .hero__image {
     width: 100%;
+    bottom: -10px;
   }
 
   .hero__slide--one .hero__image::after {
@@ -6558,7 +6558,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .examples__title {
-    font-size: 1.875rem;
     max-width: 100%;
     line-height: 100%;
     margin-bottom: 2.8125rem;
@@ -7983,15 +7982,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
-@supports (font-size: clamp( 0.75rem , 0.2282608696rem  +  2.6086956522vw , 3rem )) {
+@supports (font-size: clamp( 1.875rem , 1.6141304348rem  +  1.3043478261vw , 3rem )) {
     .examples__title {
-      font-size: clamp( 0.75rem , 0.2282608696rem  +  2.6086956522vw , 3rem );
+      font-size: clamp( 1.875rem , 1.6141304348rem  +  1.3043478261vw , 3rem );
     }
 }
 
-@supports not (font-size: clamp( 0.75rem , 0.2282608696rem  +  2.6086956522vw , 3rem )) {
+@supports not (font-size: clamp( 1.875rem , 1.6141304348rem  +  1.3043478261vw , 3rem )) {
     .examples__title {
-      font-size: calc(0.75rem + 2.25 * (100vw - 20rem) / 86.25);
+      font-size: calc(1.875rem + 1.125 * (100vw - 20rem) / 86.25);
     }
 }
 
