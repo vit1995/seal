@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 1;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20250329232618">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="120" data-scroll-show class="header">
+			<div class="header__top-container">
+				<div data-da=".menu, 1200" class="header__top">
+					<div class="header__address-body">
+						<p class="header__address-title">Адрес:</p>
+						<div class="header__address">
+							<div class="header__address-icon"><i class="_icon-location"></i></div>
+							<p class="header__address-text">г. Севастополь, ул. Токарева, 1</p>
+						</div>
+					</div>
+					<div class="header__clock-body">
+						<p class="header__clock-title">Время работы:</p>
+						<div class="header__clock">
+							<div class="header__clock-icon"><i class="_icon-clock2"></i></div>
+							<p class="header__clock-text">Режим работы: ПН - ПТ 10:00 - 18:00 </p>
+						</div>
+					</div>
+					<div class="header__phone-body">
+						<p class="header__phone-title">Телефоны:</p>
+						<div class="header__phone">
+							<div class="header__phone-icon"><i class="_icon-phone"></i></div>
+							<a data-da=".header__phone-item, 1200" href="tel:79881472140" class="header__phone-text">+ 7 988
+								147-21-40 </a>
+							<div class="header__phone-item">
+								<a href="tel:79881472140" class="header__phone-text">+ 7 988 147-21-40 </a>
+
+								<a href="tel:79881472140" class="header__phone-text">+ 7 988 147-21-40 </a>
+								<a href="tel:79881472140" class="header__phone-text">+ 7 988 147-21-40 </a>
+							</div>
+
+						</div>
+					</div>
+					<div class="header__mail-body">
+						<p class="header__mail-title">Электронный адрес:</p>
+						<div class="header__mail">
+							<div class="header__mail-icon"><i class="_icon-mail"></i></div>
+							<a href="malito:info@printingcoast.ru" class="header__mail-text">info@printingcoast.ru</a>
+						</div>
+					</div>
+					<div class="header__social-body">
+						<p class="header__social-title">Обратная связь:</p>
+						<div class="header__social">
+							<a class="header__social-link" href="#"><i class="_icon-stash_telegram"></i></a>
+							<a class="header__social-link" href="#"><i class="_icon-whatsapp"></i></a>
+							<a class="header__social-link header__social-link-vk " href="#"><i class="_icon-vk"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__container">
+				<div class="header__main">
+					<a href="#" class="header__logo">
+						<img src="img/header/logo.png" alt="#">
+						<p class="header__logo-text">
+							ООО «ПЕЧАТНЫЙ БЕРЕГ»
+							<span>ФАБРИКА НАРУЖНОЙ РЕКЛАМЫ</span>
+						</p>
+					</a>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li data-goto=".hero" class="menu__item"><a href="home.html" class="menu__link">Главная <i class="_icon-arrow-line"></i>
+									</a>
+								</li>
+								<li data-goto=".block-title" class="menu__item"><a href="#" class="menu__link">О компании <i class="_icon-arrow-line"></i> </a>
+								</li>
+								<li data-goto=".services" class="menu__item"><a href="#" class="menu__link">Услуги <i class="_icon-arrow-line"></i></a></li>
+								<li data-goto=".hero-portfolio" class="menu__item"><a target="_blank" rel="noopener noreferrer" href="portfolio.html" class="menu__link">Портфолио <i class="_icon-arrow-line"></i></a>
+								</li>
+								<li data-goto=".requirement" class="menu__item"><a href="#" class="menu__link">Требования к макетам <i class="_icon-arrow-line"></i></a></li>
+								<li data-goto=".contact" class="menu__item"><a href="#" class="menu__link">Контакты <i class="_icon-arrow-line"></i></a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<a data-ripple data-popup="#popup" href="#" class="header__button button">Оформить заказ</a>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+
+					<div class="requirement__form form-requirement form-requirement--popup">
+						<h2 class="form-requirement__title">ОФОРМЛЕНИЕ ЗАКАЗА <button data-close type="button" class="popup__close"><svg width="28" height="30" viewBox="0 0 28 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="2.48145" width="37.1367" height="3.35464" rx="1.67732" transform="rotate(47.6788 2.48145 0)" fill="black" />
+									<rect width="37.1367" height="3.35464" rx="1.67732" transform="matrix(-0.673287 0.739382 0.739382 0.673287 25.0039 0)" fill="black" />
+								</svg></button> </h2>
+						<form class="form-requirement__form" action="files/sendmail/sendmail.php" method="POST">
+							<input autocomplete="off" type="text" name="name" placeholder="Фамилия Имя, Компания " class="form-requirement__input input">
+							<div class="form-requirement__item">
+								<input data-inputmask="'mask': '+ 7 (999)-999-99-99'" autocomplete="off" type="text" name="phone" placeholder="+ 7 (_ _ _) _ _ _-_ _-_ _ " class="form-requirement__input input">
+								<input autocomplete="off" type="text" name="email" placeholder="Ваш E-mail " class="form-requirement__input input">
+							</div>
+							<textarea data-autoheight data-autoheight-min="150" autocomplete="off" name="text" placeholder="Комментарий к заказу (продукция, размеры,техническое задание, ссылка на макет)" data-error="Помилка" class="form-requirement__textarea input"></textarea>
+							<button type="submit" class="form-requirement__button button">Отправить заказ</button>
+							<div class="checkbox checkbox--popup">
+								<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="chek">
+								<label for="c_3" class="checkbox__label"><span class="checkbox__text">Даю согласие на <a href="#">обработку персональных данных</a>
+										и соглашаюсь с политикой конфиденциальности.</span></label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<main class="page">
+			<section data-watch="navigator" class=" hero">
+				<img class="hero__bg" src="img/hero/background.png" alt="#">
+				<img class="hero__bg-logo" src="img/hero/background-2.png" alt="">
+				<div class="hero__container-swiper">
+					<div class="hero__container">
+						<!-- Оболонка слайдера -->
+						<div class="hero__slider swiper">
+							<!-- Частина слайдера, що рухається -->
+							<div class="hero__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="hero__slide hero__slide--one swiper-slide">
+									<h1 data-swiper-parallax="-200" class="hero__title">САМЫЙ <span>СОВРЕМЕННЫЙ</span> ПЕЧАТНЫЙ
+										ПАРК В КРЫМУ!</h1>
+									<p data-swiper-parallax="-400" class="hero__subtitle">ваша реклама в надежных руках</p>
+									<div data-swiper-parallax="-800" class="hero__image"> <img src="img/hero/01.png" alt="#">
+									</div>
+								</div>
+								<div class="hero__slide hero__slide--main swiper-slide">
+									<div class="hero__slide-body hero__slide-body--main">
+										<div class="hero__content">
+											<h2 data-swiper-parallax="-200" class="hero__title">Производим объёмные
+												световые и неоновые вывески </h2>
+											<p data-swiper-parallax="-400" class="hero__subtitle">Благодаря собственному
+												производству и монтажным бригадам,
+												мы изготавливаем конструкции любых видов сложности и размеров,
+												предлагая лучшие цены в Крыму.</p>
+											<a data-swiper-parallax="-600" href="#" class="hero__button button">Смотреть портфолио
+											</a>
+										</div>
+										<div data-swiper-parallax="-800" class="hero__image">
+
+											<img src="img/hero/03.png" alt="#">
+										</div>
+									</div>
+								</div>
+								<div class="hero__slide hero__slide--last swiper-slide">
+									<div class="hero__slide-body hero__slide-body--last ">
+										<div class="hero__content">
+											<h2 data-swiper-parallax="-200" class="hero__title">Печатаем
+												и монтируем баннеры </h2>
+											<p data-swiper-parallax="-400" class="hero__subtitle">Качественная и яркая печать
+												баннеров с УФ-защитой.
+												Монтаж по всему Крыму, доставка по всей России.</p>
+											<a data-swiper-parallax="-600" href="#" class="hero__button button">Смотреть портфолио
+											</a>
+										</div>
+										<div data-swiper-parallax="-800" class="hero__image">
+
+											<img src="img/hero/02.png" alt="#">
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Якщо потрібна пагінація -->
+
+							<button type="button" class="hero-button-prev swiper-button-prev"><img src="img/hero/arrow-left.svg" alt="#"></button>
+							<button type="button" class="hero-button-next swiper-button-next"><img src="img/hero/arrow-rigth.svg" alt="#"></button>
+
+
+						</div>
+
+					</div>
+
+				</div>
+				<div class="hero-pagination"></div>
+
+			</section>
+			<section class="advertising">
+				<div class="advertising__container">
+					<div class="advertising__items">
+						<div class="advertising__item">
+							<div class="advertising__icon"><img src="img/advertising/01.svg" alt="#"></div>
+							<div class="advertising__block">
+								<h2 class="advertising__title">ДИЗАЙН</h2>
+								<p class="advertising__text"> Услуги дизайнера,
+									создание / адаптация
+									наружной рекламы</p>
+							</div>
+						</div>
+						<div class="advertising__item">
+							<div class="advertising__icon"><img src="img/advertising/02.svg" alt="#"></div>
+							<div class="advertising__block">
+								<h2 class="advertising__title">ПЕЧАТЬ </h2>
+								<p class="advertising__text"> Услуги дизайнера,
+									Печать любых форматов,
+									рекордная скорость, качество
+									и современное оборудование</p>
+							</div>
+						</div>
+						<div class="advertising__item">
+							<div class="advertising__icon"><img src="img/advertising/03.svg" alt="#"></div>
+							<div class="advertising__block">
+								<h2 class="advertising__title">МОНТАЖ</h2>
+								<p class="advertising__text"> Услуги дизайнера,
+									Выезжаем на монтажные
+									работы / замеры по всему Крыму
+									и новым регионам </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch="navigator" data-watch-threshold="1" class="block-title">
+				<div class="block-title__container">
+					<h2>
+						НАША КОМПАНИЯ БОЛЕЕ <span>9 ЛЕТ</span>
+						выполняет
+						комплекс услуг
+						по брендированию вашего бизнеса
+					</h2>
+				</div>
+			</section>
+			<section data-watch="navigator" data-watch-threshold="0.8" class="services">
+				<div class="services__container-big">
+					<img class="services__image-bg" src="img/servises/bac.png" alt="#">
+					<div class="services__container">
+						<h2 class="services__title">УСЛУГИ </h2>
+						<div class="services__body">
+							<div class="services__items">
+								<div class="services__item">
+									<p class="services__text">Печать
+										и обработка
+										баннеров </p>
+									<div class="services__image"><img src="img/servises/01.png" alt="#"> </div>
+									<div class="services__block">
+										<div class="services__block-price">От 200 руб. /кв.м.</div>
+										<ul class="services__block-list">
+											<li>Баннер литой </li>
+											<li>Баннер ламинированный</li>
+											<li>Баннерная сетка</li>
+											<li>Баннер бэклит</li>
+											<li>Баннер блэк бэк </li>
+											<li>Тентовая
+												ткань </li>
+											<li>Холст</li>
+											<li>Фотообои</li>
+										</ul>
+									</div>
+								</div>
+								<div class="services__item">
+									<p class="services__text">Печать на плёнке
+										и бумаге
+									</p>
+									<div class="services__image"><img src="img/servises/02.png" alt="#"> </div>
+									<div class="services__block">
+										<div class="services__block-price">От 180 руб. /кв.м.</div>
+										<ul class="services__block-list">
+											<li>Плёнка матовая / глянцевая</li>
+											<li>Перфоплёнка</li>
+											<li>Бумага блю бэк</li>
+											<li> Бумага сити </li>
+
+										</ul>
+									</div>
+								</div>
+								<div class="services__item">
+									<p class="services__text">Офсетная
+										печать
+
+									</p>
+									<div class="services__image"><img src="img/servises/03.png" alt="#"> </div>
+									<div class="services__block">
+										<div class="services__block-price">Индивидуальный расчёт </div>
+										<ul class="services__block-list">
+											<li>Визитки </li>
+											<li>Флаера</li>
+											<li>Буклеты</li>
+											<li>Грамоты</li>
+
+										</ul>
+									</div>
+								</div>
+								<div class="services__item">
+									<p class="services__text">Изготовление
+										наклеек
+									</p>
+									<div class="services__image"><img src="img/servises/04.png" alt="#"> </div>
+									<div class="services__block">
+										<div class="services__block-price">От 350 руб. /кв.м.</div>
+										<ul class="services__block-list">
+											<li>Печать на плёнке
+												с контурной порезкой </li>
+											<li>Плёнка глянцевая / матовая</li>
+											<li>Ламинация глянцевая / матовая </li>
+
+										</ul>
+									</div>
+								</div>
+
+								<div class="services__item">
+									<p class="services__text">Печать
+										и обработка
+										баннеров </p>
+									<div class="services__image"><img src="img/servises/05.png" alt="#"> </div>
+									<div class="services__block">
+										<div class="services__block-price">Индивидуальный расчёт </div>
+										<ul class="services__block-list">
+											<li>Объёмные буквы
+												(на металлоконструкции / композите) </li>
+											<li>Лайтбокс</li>
+											<li> Вывеска с контражуром</li>
+											<li> Вывеска с инкрустацией на композите </li>
+
+										</ul>
+									</div>
+								</div>
+								<div class="services__item">
+									<p class="services__text">Печать на плёнке
+										и бумаге
+									</p>
+									<div class="services__image"><img src="img/servises/06.png" alt="#"> </div>
+									<div class="services__block">
+										<div class="services__block-price">От 10 000 руб. </div>
+										<ul class="services__block-list">
+											<li>Неоновые вывески на акриловой подложке </li>
+											<li>Картины на ПВХ
+												с элементами неона </li>
+
+
+										</ul>
+									</div>
+								</div>
+								<div class="services__item">
+									<p class="services__text">Офсетная
+										печать
+
+									</p>
+									<div class="services__image"><img src="img/servises/07.png" alt="#"> </div>
+									<div class="services__block">
+										<div class="services__block-price">Индивидуальный расчёт </div>
+										<ul class="services__block-list">
+											<li>Поклейка стандартной плёнкой</li>
+											<li>Поклейка полимерной плёнкой</li>
+											<li>Поклейка литой плёнкой </li>
+
+										</ul>
+									</div>
+								</div>
+
+
+								<div class="services__item">
+									<p class="services__text">Изготовление
+										наклеек
+									</p>
+									<div class="services__image"><img src="img/servises/08.png" alt="#"> </div>
+									<div class="services__block">
+										<div class="services__block-price">От 2000 руб.</div>
+										<ul class="services__block-list">
+											<li>Выезд по Севастополю</li>
+
+
+										</ul>
+										<div class="services__block-price">От 3000 руб. </div>
+										<ul class="services__block-list">
+											<li>Выезд по Крыму</li>
+
+
+										</ul>
+									</div>
+								</div>
+
+							</div>
+							<div data-da=".services__items, 1000" class="services__aside ">
+								<p class="services__text">Дизайн
+									и адаптация
+									макетов
+								</p>
+								<div class="services__image"><img src="img/servises/09.png" alt="#"> </div>
+								<div class="services__block">
+									<div class="services__block-price">От 500 руб. </div>
+									<ul class="services__block-list">
+										<li>Создание
+											индивидуального
+											дизайнерского макета</li>
+
+
+									</ul>
+									<div class="services__block-price">От 250 руб.</div>
+									<ul class="services__block-list">
+										<li> Адаптация макета
+											(вашего / нашего)
+											под любые размеры</li>
+										<li> Адаптация макета
+											(вашего / нашего)
+											под любые размеры</li>
+										<li> До 3-х бесплатных правок</li>
+
+
+									</ul>
+								</div>
+							</div>
+						</div>
+						<a data-popup="#popup" data-ripple class="services__button button" href="#">Оформить заказ</a>
+					</div>
+				</div>
+			</section>
+			<section class="advantages">
+				<div class="advantages__container">
+					<h2 class="advantages__title">ПРЕИМУЩЕСТВА РАБОТЫ С НАМИ </h2>
+					<div class="advantages__items">
+						<div class="advantages__item">
+							<div class="advantages__icon"><img src="img/advantages/01.svg" alt="#"></div>
+							<p class="advantages__text">Современный печатный парк
+								и его плановое обновление</p>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__icon"><img src="img/advantages/02.svg" alt="#"></div>
+							<p class="advantages__text">Современный печатный парк
+								и его плановое обновление</p>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__icon"><img src="img/advantages/03.svg" alt="#"></div>
+							<p class="advantages__text">Современный печатный парк
+								и его плановое обновление</p>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__icon"><img src="img/advantages/04.svg" alt="#"></div>
+							<p class="advantages__text">Современный печатный парк
+								и его плановое обновление</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch="navigator" data-watch-threshold="0.6" class="examples">
+				<div class="examples__container-big">
+					<img class="examples__image-bg" src="img/servises/bac.png" alt="#">
+					<div class="examples__container">
+						<h2 class="examples__title">ПРИМЕРЫ <span>НАШИХ</span> РАБОТ</h2>
+						<div class="examples__body">
+							<img class="examples__body-bacr" src="img/examples/bac-svg.svg" alt="">
+							<div class="examples__column">
+								<div class="examples__item">
+									<img src="img/examples/01.jpg" alt="#">
+
+								</div>
+								<div class="examples__item">
+									<img src="img/examples/02.jpg" alt="#">
+
+								</div>
+							</div>
+							<div class="examples__items">
+								<div class="examples__item">
+									<img src="img/examples/03.jpg" alt="#">
+
+								</div>
+								<div class="examples__item">
+									<img src="img/examples/04.jpg" alt="#">
+
+								</div>
+								<div class="examples__item">
+									<img src="img/examples/05.jpg" alt="#">
+
+								</div>
+								<div class="examples__item">
+									<img src="img/examples/06.jpg" alt="#">
+
+								</div>
+								<div class="examples__item">
+									<img src="img/examples/07.jpg" alt="#">
+
+								</div>
+								<div class="examples__item">
+									<img src="img/examples/08.jpg" alt="#">
+
+								</div>
+							</div>
+						</div>
+						<a class="examples__button" href="#">
+							<span>СМОТРЕТЬ</span> ПОРТФОЛИО
+							<div class="examples__button-icon"><i class="_icon-arrow-line"></i></div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="examples-mob">
+				<img class="examples-mob__fon" src="img/examples/fon-mob.png" alt="#">
+				<div class="examples-mob__container">
+					<h2 class="examples__title">ПРИМЕРЫ <span>НАШИХ</span> РАБОТ</h2>
+					<div class="examples-mob__decor-body">
+						<div class="examples-mob__body">
+							<div class="examples-mob__row">
+								<h3 class="examples-mob__title">Вывески</h3>
+								<div class="examples-mob__slider swiper">
+									<div class="examples-mob__wrapper swiper-wrapper">
+										<!-- Слайд -->
+										<div class="examples-mob__slide swiper-slide">
+
+											<img src="img/examples/01.jpg" alt="#">
+										</div>
+										<div class="examples-mob__slide swiper-slide">
+											<img src="img/examples/02.jpg" alt="#">
+										</div>
+										<div class="examples-mob__slide swiper-slide">
+											<img src="img/examples/03.jpg" alt="#">
+										</div>
+									</div>
+									<div class="examples-mob-pagination"></div>
+
+								</div>
+							</div>
+							<div class="examples-mob__row">
+								<h3 class="examples-mob__title">БАННЕРА</h3>
+
+								<div class="examples-mob__slider swiper">
+									<div class="examples-mob__wrapper swiper-wrapper">
+										<!-- Слайд -->
+										<div class="examples-mob__slide swiper-slide">
+											<img src="img/examples/01.jpg" alt="#">
+										</div>
+										<div class="examples-mob__slide swiper-slide">
+											<img src="img/examples/02.jpg" alt="#">
+										</div>
+										<div class="examples-mob__slide swiper-slide">
+											<img src="img/examples/03.jpg" alt="#">
+										</div>
+									</div>
+									<div class="examples-mob-pagination"></div>
+								</div>
+							</div>
+							<div class="examples-mob__row">
+								<h3 class="examples-mob__title">ПЛЁНКА</h3>
+
+								<div class="examples-mob__slider swiper">
+									<div class="examples-mob__wrapper swiper-wrapper">
+										<!-- Слайд -->
+										<div class="examples-mob__slide swiper-slide">
+											<img src="img/examples/01.jpg" alt="#">
+										</div>
+										<div class="examples-mob__slide swiper-slide">
+											<img src="img/examples/02.jpg" alt="#">
+										</div>
+										<div class="examples-mob__slide swiper-slide">
+											<img src="img/examples/03.jpg" alt="#">
+										</div>
+									</div>
+									<div class="examples-mob-pagination"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<a class="examples__button" href="#">
+						<span>СМОТРЕТЬ</span> ПОРТФОЛИО
+						<div class="examples__button-icon"><i class="_icon-arrow-line"></i></div>
+					</a>
+				</div>
+			</section>
+			<section class="order">
+				<div class="order__container">
+					<h2 class="order__title">ПОРЯДОК РАБОТЫ </h2>
+					<div class="order__items">
+						<div class="order__item">
+							<div class="order__number">0<span>1</span></div>
+							<div class="order__block">
+								<h3 class="order__item-title"><span>ПРИЁМ</span> ЗАЯВКИ</h3>
+								<p class="order__text">Приём вашей заявки
+									по телефону / электронной почте.
+									К заявке можно приложить макет проекта (требования к макету указаны ниже). При отсутствии
+									макета, его можно заказать у нас.
+								</p>
+							</div>
+						</div>
+						<div class="order__item">
+							<div class="order__number">0<span>2</span></div>
+							<div class="order__block">
+								<h3 class="order__item-title"><span>РАССЧЁТ</span> СТОИМОСТИ</h3>
+								<p class="order__text">Мы проводим рассчёт стоимости, после чего оговариваются сроки
+									изготовления. Проводится предоплата.
+								</p>
+							</div>
+						</div>
+						<div class="order__item">
+							<div class="order__number">0<span>3</span></div>
+							<div class="order__block">
+								<h3 class="order__item-title"><span>ИЗГОТОВЛЕНИЕ</span></h3>
+								<p class="order__text">Изготовление изделий по макету, предоставленному заказчиком,
+									со всеми требованиями и
+									с соблюдением оговоренных раннее сроков.
+
+								</p>
+							</div>
+						</div>
+						<div class="order__item">
+							<div class="order__number">0<span>4</span></div>
+							<div class="order__block">
+								<h3 class="order__item-title"><span>ПОЛУЧЕНИЕ</span> ЗАКАЗА</h3>
+								<p class="order__text">Вы можете забрать ваш заказ
+									по адресу: г. Севастополь,
+									ул. Токарева, 1
+									Также, отправляем доставкой
+									по всей России.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch="navigator" data-watch-threshold="0.6" class="requirement">
+				<div class="requirement__container">
+					<div class="requirement__form form-requirement">
+						<h2 class="form-requirement__title">ОФОРМЛЕНИЕ ЗАКАЗА </h2>
+						<form class="form-requirement__form" action="files/sendmail/sendmail.php" method="POST">
+							<input autocomplete="off" type="text" name="name" placeholder="Фамилия Имя, Компания " class="form-requirement__input input">
+							<div class="form-requirement__item">
+								<input data-inputmask="'mask': '+ 7 (999)-999-99-99'" autocomplete="off" type="text" name="phone" placeholder="+ 7 (_ _ _) _ _ _-_ _-_ _ " class="form-requirement__input input">
+								<input autocomplete="off" type="text" name="email" placeholder="Ваш E-mail " class="form-requirement__input input">
+							</div>
+							<textarea data-autoheight data-autoheight-min="150" autocomplete="off" name="text" placeholder="Комментарий к заказу (продукция, размеры,техническое задание, ссылка на макет)" data-error="Помилка" class="form-requirement__textarea input"></textarea>
+							<button data-ripple type="submit" class="form-requirement__button button">Отправить заказ</button>
+							<div class="checkbox">
+								<input id="c_1" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="chek">
+								<label for="c_1" class="checkbox__label"><span class="checkbox__text">Даю согласие на <a href="#">обработку персональных данных</a>
+										и соглашаюсь с политикой конфиденциальности.</span></label>
+							</div>
+						</form>
+					</div>
+					<div class="requirement__body">
+						<h2 class="requirement__title">ТРЕБОВАНИЯ К МАКЕТАМ </h2>
+						<div data-spollers class="requirement__spollers spollers">
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">ТЕХНИЧЕСКОЕ ЗАДАНИЕ</button>
+								<div class="spollers__body">Техническое задание по изготовлению продукции обязательно
+									должно быть указано на латинице в названии файла с макетом.
+									(прим. banner_litoy_payka_lyuversi_1000х1000mm) </div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">ФОРМАТ</button>
+								<div class="spollers__body">Файл для печати должен быть в формате TIF, PSD,
+									либо в векторном формате CorelDraw (любой версии), PDF.
+									Все объекты, включая текст, должны быть переведены в кривые. </div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">ЦВЕТОВАЯ МОДЕЛЬ</button>
+								<div class="spollers__body">Цветовая модель CMYK. </div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">СЛОИ</button>
+								<div class="spollers__body">Слои необходимо свести в единый слой – Background, исключить
+									альфа-каналы –Channels и пути – Paths. </div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">РАЗРЕШЕНИЕ</button>
+								<div class="spollers__body">Для широкоформатной печати - разрешение 72 pixel/inch,
+									8bits/channel. Для интерьерной печати – 150 pixel/inch.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch="navigator" data-watch-threshold="0.6" class="contact">
+				<div class="contact__container">
+					<div class="contact__reviews reviews-contact">
+						<h2 class="reviews-contact__title">ОСТАВЬТЕ ОТЗЫВ
+							О НАШЕЙ РАБОТЕ </h2>
+						<div class="reviews-contact__top"><img src="img/reviews-contact/top.jpg" alt="#"></div>
+						<!-- Оболонка слайдера -->
+						<div class="reviews-contact__slider swiper">
+							<!-- Частина слайдера, що рухається -->
+							<div class="reviews-contact__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="reviews-contact__slide swiper-slide">
+									<img src="img/reviews-contact/01.png" alt="#">
+								</div>
+								<div class="reviews-contact__slide swiper-slide">
+									<img src="img/reviews-contact/01.png" alt="#">
+								</div>
+								<div class="reviews-contact__slide swiper-slide">
+									<img src="img/reviews-contact/01.png" alt="#">
+								</div>
+							</div>
+							<!-- Якщо потрібна пагінація -->
+							<div class="reviews-contact-pagination swiper-pagination"></div>
+
+						</div>
+						<div class="reviews-contact__bottom">
+							<a data-ripple class="reviews-contact__button" href="#">Оставить отзыв </a>
+							<div class="reviews-contact__navigacons">
+								<div type="button" class="reviews-contact-button-prev "><i class="_icon-arrow-line"></i></div>
+								<div type="button" class="reviews-contact-button-next"><i class="_icon-arrow-line"></i></div>
+							</div>
+						</div>
+					</div>
+					<div class="contact__map">
+						<div style="width: 100%;" id="map" class="map"></div>
+
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__column">
+						<a class="footer__logo" href="#">
+							<img class="footer__logo-image" src="img/header/logo.png" alt="#">
+							<p class="footer__logo-text">ООО «ПЕЧАТНЫЙ БЕРЕГ»
+								<span>ФАБРИКА НАРУЖНОЙ РЕКЛАМЫ</span>
+							</p>
+						</a>
+						<p class="footer__text">Печатный Берег - фабрика наружной рекламы, которая уже более 10 лет занимается
+							полным комплексом услуг брендирования бизнесов, включающих создание индивидуального дизайнерского макета,
+							производство, доставку, монтаж, а также последующее техническое сопровождение изделия.</p>
+
+						<div class="footer__social">
+							<a href="#" class="footer__social-link"><i class="_icon-stash_telegram"></i></a>
+							<a href="#" class="footer__social-link"><i class="_icon-whatsapp"></i></a>
+
+							<a href="#" class="footer__social-link"><i class="_icon-vk-circle"></i></a>
+
+							<p class="footer__social-text">ОБРАТНАЯ СВЯЗЬ </p>
+						</div>
+					</div>
+					<div data-spollers="768,max" class="footer__nav">
+						<h2 data-spoller class="footer__title">КОНТАКТЫ </h2>
+						<div class="footer__item">
+							<div class="footer__phone-body">
+								<p class="footer__phone-title">Телефоны:</p>
+								<div class="footer__phone">
+									<div class="footer__phone-icon"><i class="_icon-phone"></i></div>
+
+									<div class="footer__phone-item">
+										<a href="tel:79881472140" class="footer__phone-text">+ 7 988 147-21-40 </a>
+										<a href="tel:79881472140" class="footer__phone-text">+ 7 988 147-21-40 </a>
+
+										<a href="tel:79881472140" class="footer__phone-text">+ 7 988 147-21-40 </a>
+										<a href="tel:79881472140" class="footer__phone-text">+ 7 988 147-21-40 </a>
+									</div>
+
+								</div>
+							</div>
+							<div class="footer__mail-body">
+								<p class="footer__mail-title">Электронный адрес:</p>
+								<div class="footer__mail">
+									<div class="footer__mail-icon"><i class="_icon-mail"></i></div>
+									<a href="malito:info@printingcoast.ru" class="footer__mail-text">info@printingcoast.ru</a>
+								</div>
+							</div>
+							<div class="footer__clock-body">
+								<p class="footer__clock-title">Время работы:</p>
+								<div class="footer__clock">
+									<div class="footer__clock-icon"><i class="_icon-clock"></i></div>
+									<p class="footer__clock-text">Режим работы: ПН - ПТ 10:00 - 18:00 </p>
+								</div>
+							</div>
+							<div class="footer__address-body">
+								<p class="footer__address-title">Адрес:</p>
+								<div class="footer__address">
+									<div class="footer__address-icon"><i class="_icon-location"></i></div>
+									<p class="footer__address-text">г. Севастополь, ул. Токарева, 1</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<nav data-spollers="768,max" class="footer__nav">
+						<h2 data-spoller class="footer__title">ИНФОРМАЦИЯ </h2>
+						<ul class="footer__list">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#"> Портфолио</a></li>
+							<li><a href="#">Требования к макетам </a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<nav data-spollers="768,max" class="footer__nav">
+						<h2 data-spoller class="footer__title">УСЛУГИ </h2>
+						<ul class="footer__list">
+							<li><a href="#">Баннеры</a></li>
+							<li><a href="#">Объёмные световые вывески</a></li>
+							<li><a href="#"> Неон</a></li>
+							<li><a href="#"> Печать на самоклящейся плёнке </a></li>
+							<li><a href="#">Печать на бумаге </a></li>
+							<li><a href="#">Изготовление наклеек</a></li>
+							<li><a href="#">Офсетная печать </a></li>
+							<li><a href="#">Дизайн вашей рекламы</a></li>
+							<li><a href="#">Монтаж нашей продукции </a></li>
+
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__bottom">
+					<p>© 2025 ПЕЧАТНЫЙ БЕРЕГ. Все права защищены️ </p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=2e598fd5-1ffe-4662-947f-512d08e97c36&lang=ru_RU&_v=20250329232618"></script>
+	<script src="js/app.min.js?_v=20250329232618"></script>
+	</script>
+
+</body>
+
+</html>
