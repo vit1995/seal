@@ -9466,6 +9466,10 @@
                 autoHeight: true,
                 speed: 800,
                 parallax: true,
+                autoplay: {
+                    delay: 3e3,
+                    disableOnInteraction: false
+                },
                 pagination: {
                     el: ".hero-pagination",
                     clickable: true
